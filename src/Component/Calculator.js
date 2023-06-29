@@ -6,8 +6,8 @@ const Calculator = () => {
   const [num2, setNum2] = useState('');
   const [result, setResult] = useState('');
 
-  const handleInputChange = (e, inputNum) => {
-    const value = e.target.value;
+  const handleInputChange = (event, inputNum) => {
+    const value = event.target.value;
     if (inputNum === 1) {
       setNum1(value);
     } else {
@@ -21,8 +21,8 @@ const Calculator = () => {
   };
 
   const handleSubtraction = () => {
-    const difference = Number(num1) - Number(num2);
-    setResult(difference);
+    const substraction = Number(num1) - Number(num2);
+    setResult(substraction);
   };
 
   const handleMultiplication = () => {
@@ -31,8 +31,8 @@ const Calculator = () => {
   };
 
   const handleDivision = () => {
-    const quotient = Number(num1) / Number(num2);
-    setResult(quotient);
+    const dev = Number(num1) / Number(num2);
+    setResult(dev);
   };
 
   return (
